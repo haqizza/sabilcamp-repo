@@ -1,7 +1,7 @@
 const readline = require('readline')
 const fs = require('fs')
 
-const fileData = fs.readFileSync('./data.json')
+const fileData = fs.readFileSync('../C12/data.json')
 
 const data = JSON.parse(fileData)
 
