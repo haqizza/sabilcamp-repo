@@ -22,6 +22,12 @@ class Car {
     this.name = name
     this.age = 0
   }
+
+  warrantyCheck(){
+    // 5 year warranty
+    if (this.age > 5) return 'Not Active'
+    else return 'Active'
+  }
 }
 
 class Tire {

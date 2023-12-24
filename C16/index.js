@@ -23,16 +23,8 @@ car2.door = new Door(5)
 console.log(`\n${car1.name} factory/trademark: ${car1.factory.name}`)
 console.log(`${car2.name} factory/trademark: ${car2.factory.name}`)
 
-
-
-function warrantyCheck(car){
-  // 5 year warranty
-  if (car.age > 5) return 'Not Active'
-  else return 'Active'
-}
-
 car1.age = Math.random() * 10
 car2.age = Math.random() * 10
 
-console.log(`\n${car1.name} warranty: ${warrantyCheck(car1)} (age: ${car1.age})`)
-console.log(`${car2.name} warranty: ${warrantyCheck(car2)} (age: ${car2.age})`)
+console.log(`\n${car1.name} warranty: ${car1.warrantyCheck()} (age: ${car1.age})`)
+console.log(`${car2.name} warranty: ${car2.warrantyCheck()} (age: ${car2.age})`)
